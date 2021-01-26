@@ -223,4 +223,48 @@ a {
 } 
 .children__description{
     margin: 30px 0;
+} 
+
+/********************************************
+ Check-Up Section:
+*********************************************/ 
+
+.check-up__container{
+    padding: 150px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.check-up__photo{
+   width: 40%;
+   position: relative;
+} 
+
+.check-up__image{
+   width: 100%;
+} 
+.check-up__pattern{
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   z-index: -2;
+   bottom: -5%;
+   right: -10%;  
+} 
+
+.check-up__bg-shape{
+   background-color: var(--primary-color);
+   width: 455px;
+   height: 515px;
+   position: absolute;
+   z-index: -1;
+   transform:rotate(15deg)
 }
+.check-up__text{
+   width: 45%;
+} 
+.check-up__description{
+   margin: 30px 0;
+} 
