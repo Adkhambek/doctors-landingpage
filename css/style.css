@@ -40,7 +40,7 @@ h2 {
 
 p {
     color: var(--secondary-color);
-    font-size: 15px;
+    font-size: 20px;
     font-weight: normal;
     line-height: 1.5;
 }
@@ -110,7 +110,7 @@ a {
  Book Section:
 *********************************************/
 .book {
-    padding: 100px 0;
+    padding: 200px 0 150px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,7 +162,7 @@ a {
     width: 300px;
     height: 400px;
     right: 350px;
-    bottom: 0;
+    bottom: 20%;
 }
 
 .book__image-2 {
@@ -170,14 +170,57 @@ a {
     width: 300px;
     height: 400px;
     right: 0;
-    bottom: 5%;
+    bottom: 30%;
 }
 
 .book__image-3 {
     position: absolute;
     width: 300px;
     height: 300px;
-    top: -35%;
-    right: 10%;
+    top: -30%;
+    right: 5%;
     z-index: -1;
+} 
+
+/********************************************
+ Children Section:
+*********************************************/
+
+.children__container{
+     padding: 150px 0;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+} 
+
+.children__photo{
+    width: 40%;
+    position: relative;
+} 
+
+.children__image{
+    width: 100%;
+} 
+.children__pattern{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: -2;
+    bottom: -5%;
+    left: -10%;  
+} 
+
+.children__bg-shape{
+    background-color: var(--primary-color);
+    width: 455px;
+    height: 515px;
+    position: absolute;
+    z-index: -1;
+    transform:rotate(15deg)
+}
+.children__text{
+    width: 45%;
+} 
+.children__description{
+    margin: 30px 0;
 }
