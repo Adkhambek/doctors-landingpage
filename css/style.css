@@ -110,7 +110,7 @@ a {
  Book Section:
 *********************************************/
 .book {
-    padding: 200px 0 150px;
+    padding: 150px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -268,3 +268,44 @@ a {
 .check-up__description{
    margin: 30px 0;
 } 
+
+/********************************************
+ Doctors Section:
+*********************************************/
+
+.doctors{
+    padding: 150px 0;
+    text-align: center;
+    position: relative;
+}
+
+.doctors__pattern{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+} 
+
+.doctors__sub-title{
+    margin: 30px 0 70px;
+} 
+
+.doctors__list{
+    display: block;
+    text-align: left;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+} 
+
+.doctor{
+    width: 50%;
+    padding: 50px;
+    background-color: var(--box-color);
+
+}
+
+.doctor:not(:nth-child(2)){
+    margin-left: auto;
+}
