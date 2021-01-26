@@ -180,132 +180,224 @@ a {
     top: -30%;
     right: 5%;
     z-index: -1;
-} 
+}
 
 /********************************************
  Children Section:
 *********************************************/
 
-.children__container{
-     padding: 150px 0;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
-} 
+.children__container {
+    padding: 150px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-.children__photo{
+.children__photo {
     width: 40%;
     position: relative;
-} 
+}
 
-.children__image{
+.children__image {
     width: 100%;
-} 
-.children__pattern{
+}
+
+.children__pattern {
     width: 100px;
     height: 100px;
     position: absolute;
     z-index: -2;
     bottom: -5%;
-    left: -10%;  
-} 
+    left: -10%;
+}
 
-.children__bg-shape{
+.children__bg-shape {
     background-color: var(--primary-color);
     width: 455px;
     height: 515px;
     position: absolute;
     z-index: -1;
-    transform:rotate(15deg)
+    transform: rotate(15deg)
 }
-.children__text{
+
+.children__text {
     width: 45%;
-} 
-.children__description{
+}
+
+.children__description {
     margin: 30px 0;
-} 
+}
 
 /********************************************
  Check-Up Section:
-*********************************************/ 
+*********************************************/
 
-.check-up__container{
+.check-up__container {
     padding: 150px 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-} 
-
-.check-up__photo{
-   width: 40%;
-   position: relative;
-} 
-
-.check-up__image{
-   width: 100%;
-} 
-.check-up__pattern{
-   width: 100px;
-   height: 100px;
-   position: absolute;
-   z-index: -2;
-   bottom: -5%;
-   right: -10%;  
-} 
-
-.check-up__bg-shape{
-   background-color: var(--primary-color);
-   width: 455px;
-   height: 515px;
-   position: absolute;
-   z-index: -1;
-   transform:rotate(15deg)
 }
-.check-up__text{
-   width: 45%;
-} 
-.check-up__description{
-   margin: 30px 0;
-} 
+
+.check-up__photo {
+    width: 40%;
+    position: relative;
+}
+
+.check-up__image {
+    width: 100%;
+}
+
+.check-up__pattern {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    z-index: -2;
+    bottom: -5%;
+    right: -10%;
+}
+
+.check-up__bg-shape {
+    background-color: var(--primary-color);
+    width: 455px;
+    height: 515px;
+    position: absolute;
+    z-index: -1;
+    transform: rotate(15deg)
+}
+
+.check-up__text {
+    width: 45%;
+}
+
+.check-up__description {
+    margin: 30px 0;
+}
 
 /********************************************
  Doctors Section:
 *********************************************/
 
-.doctors{
+.doctors {
     padding: 150px 0;
     text-align: center;
     position: relative;
 }
 
-.doctors__pattern{
+.doctors__pattern {
     width: 100px;
     height: 100px;
     position: absolute;
     left: 0;
     top: 0;
-} 
+}
 
-.doctors__sub-title{
+.doctors__sub-title {
     margin: 30px 0 70px;
-} 
+}
 
-.doctors__list{
+.doctors__list {
     display: block;
     text-align: left;
     background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
-} 
+}
 
-.doctor{
+.doctor {
     width: 50%;
     padding: 50px;
     background-color: var(--box-color);
 
 }
 
-.doctor:not(:nth-child(2)){
+.doctor:not(:nth-child(2)) {
     margin-left: auto;
+}
+
+.doctor__profession,
+.doctor__facility {
+    font-weight: 600;
+}
+
+.doctor__profession {
+    margin-top: 10px;
+}
+
+.doctor__facility {
+    margin-bottom: 10px;
+}
+
+.doctor__quot {
+    margin-bottom: 30px;
+}
+
+/********************************************
+ Clients Section:
+*********************************************/
+
+.clients {
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.clients__image {
+    width: 45%;
+}
+
+.clients__text {
+    width: 35%;
+}
+
+.clients__title {
+    margin: 0 auto;
+    width: 20%;
+    text-transform: uppercase;
+    color: #ececef;
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.clients__text {
+    background-color: var(--box-color);
+    padding: 100px 50px 30px;
+}
+
+.clients__client-say {
+    margin: 30px 0;
+}
+
+.clients__name .patient {
+    display: block;
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.clients__slider {
+    width: 15px;
+    height: 65px;
+    margin-top: 40px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.clients__slider__btn {
+    outline: none;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    border: none;
+    border-radius: 50%;
+    background-color: #d7dedc;
+    transition: background-color .3s;
+}
+
+.clients__slider__btn:hover {
+    background-color: var(--primary-color);
 }
