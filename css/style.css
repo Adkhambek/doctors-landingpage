@@ -134,12 +134,15 @@ a {
 .book__box {
     background-color: var(--white);
     padding: 20px 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-radius: var(border-radius);
     box-shadow: 5px 5px 60px rgba(0, 0, 0, .08);
     position: relative;
+}
+
+.book__form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .book__box img {
@@ -161,6 +164,14 @@ a {
     color: var(--primary-color);
     font-size: 16px;
 
+}
+
+.book__submit{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 .book__image-1 {
@@ -531,5 +542,5 @@ a {
 
 .footer__copyr {
     text-align: center;
-    margin-top: 70px;
+    margin-top: 20px;
 }
